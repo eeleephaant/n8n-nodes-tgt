@@ -9,7 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/n8n-nodes-tgt.git"
+    "url": "git+https://github.com/YOUR_USERNAME/n8n-nodes-tgt.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "n8n-community-node-package",
