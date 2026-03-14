@@ -28,11 +28,11 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "n8n-node build",
+    "build": "cross-env NODE_OPTIONS=--no-deprecation n8n-node build",
     "build:watch": "tsc --watch",
-    "dev": "n8n-node dev",
-    "lint": "n8n-node lint",
-    "lint:fix": "n8n-node lint --fix",
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation n8n-node dev",
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation n8n-node lint",
+    "lint:fix": "cross-env NODE_OPTIONS=--no-deprecation n8n-node lint --fix",
     "release": "n8n-node release",
     "prepublishOnly": "n8n-node prerelease"
   },
@@ -46,12 +46,12 @@
       "dist/credentials/TransportCardApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/Example/TgtDemo.node.js",
-      "dist/nodes/Example/get_balance.node.js"
+      "dist/nodes/TgtBalance/TgtBalance.node.js"
     ]
   },
   "devDependencies": {
     "@n8n/node-cli": "*",
+    "cross-env": "^7.0.3",
     "eslint": "9.32.0",
     "prettier": "3.6.2",
     "release-it": "^19.0.4",

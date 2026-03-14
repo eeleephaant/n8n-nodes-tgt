@@ -1,0 +1,14 @@
+{
+  "node": "n8n-nodes-base.tgtbalance",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Finance & Accounting", "Productivity"],
+  "resources": {
+    "primaryDocumentation": [
+      {
+        "url": "https://github.com/YOUR_USERNAME/n8n-nodes-tgt#readme"
+      }
+    ]
+  }
+}
+

@@ -7,7 +7,7 @@ Community node for [n8n](https://n8n.io/) to work with **TGT** (transport card, 
 
 ## Nodes
 
-### Get Balance
+### TGT Balance
 
 Returns the balance for a transport card. Uses the **Account** (credential) where you store the card number; no need to enter it in each workflow.
 
@@ -54,7 +54,7 @@ npm run build
 npm run dev
 ```
 
-Then open http://localhost:5678. Create a **Transport Card** credential (Card Number) and use the **Get Balance** node with **Account** set to that credential.
+Then open http://localhost:5678. Create a **Transport Card API** credential (Card Number) and use the **TGT Balance** node with **Account** set to that credential.
 
 ### Scripts
 
@@ -70,13 +70,14 @@ Then open http://localhost:5678. Create a **Transport Card** credential (Card Nu
 ```
 n8n-nodes-tgt/
 ├── credentials/
-│   └── TransportCardApi.credentials.ts   # Transport Card (card number)
+│   └── TransportCardApi.credentials.ts   # Transport Card API (card number)
+├── icons/
+│   ├── tgt.svg
+│   └── tgt.dark.svg
 ├── nodes/
-│   └── Example/
-│       ├── TgtDemo.node.ts               # TGT Demo node
-│       ├── get_balance.node.ts           # TGT Balance node
-│       ├── get_balance.node.json         # Codex for Get Balance
-│       ├── TgtDemo.node.json             # Codex for demo node
+│   └── TgtBalance/
+│       ├── TgtBalance.node.ts           # TGT Balance node
+│       ├── TgtBalance.node.json         # Codex for TGT Balance
 │       ├── tgt.svg
 │       └── tgt.dark.svg
 ├── package.json
